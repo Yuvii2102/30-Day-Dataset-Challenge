@@ -16,11 +16,11 @@
   Can we predict customer churn based on their usage behavior and service details?
 
 . Prediction / Output:
-  Customer will churn (leave) or not churn (stay).  Eg:-     Input ->                     Output ->
+  Customer will churn (leave) or not churn (stay).       
   
-                                                         Usage = Low                 Customer will leave 
-                                                         Support Calls = High
-                                                         Payment Delay = Yes
+                                                   Eg:-     Input ->  Usage = Low                  Output -> Customer will leave 
+                                                                      Support Calls = High
+                                                                      Payment Delay = Yes
 
 . What we learned:
    - Customers with high support calls are more likely to leave.
