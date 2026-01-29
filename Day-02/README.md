@@ -18,9 +18,9 @@
 . Prediction / Output:
   Customer will churn (leave) or not churn (stay).       
   
-                                                   Eg:-     Input ->  -Usage = Low                  Output ->  -Customer will leave 
-                                                                      -Support Calls = High
-                                                                      -Payment Delay = Yes
+                                                   Eg:-     Input ->  Usage = Low                  Output ->  Customer will leave 
+                                                                      Support Calls = High
+                                                                      Payment Delay = Yes
 
 . What we learned:
    - Customers with high support calls are more likely to leave.
