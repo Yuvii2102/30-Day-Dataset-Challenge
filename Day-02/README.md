@@ -1,4 +1,4 @@
-                                                                  . Day 02 :– Customer Churn Prediction Dataset
+                                            . Day 02 :– Customer Churn Prediction Dataset
 
 . Dataset Source:
   https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset
