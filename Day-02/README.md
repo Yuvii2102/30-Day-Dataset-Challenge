@@ -33,13 +33,13 @@
 . Real-life use:  
 
                   1) Telecom companies 
-                     // Predict which customer may stop using SIM, give special offeres and discounts, Improve network or plan
+                     Predict which customer may stop using SIM, give special offeres and discounts, Improve network or plan
                   
                   2)  OTT Platforms    
-                      // Offer cheaper plan
+                      Offer cheaper plan
                   
                   3) Banks
-                     // Improve banking services, Offer better loans or schemes
+                     Improve banking services, Offer better loans or schemes
                                           
                   4) E-commerce Websites           
-                    // Send personalized offers , improve user experience
+                     Send personalized offers , improve user experience
