@@ -12,7 +12,7 @@
 
 * ML Concept
    Machine Learning – Classification
-  (Binary outcome: Approved / Not Approved)
+   (Binary outcome: Approved / Not Approved)
 
 * Problem Statement
   Can we predict whether a loan will be approved or rejected based on applicant details?
