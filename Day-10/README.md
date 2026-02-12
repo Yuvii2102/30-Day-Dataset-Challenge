@@ -1,5 +1,11 @@
                                                  💰 Day 09 – Waiter Tips Prediction Dataset
 
+✨ Datset Source
+
+https://amanxai.com/2022/02/01/waiter-tips-prediction-with-machine-learning/
+
+---
+
 📌 Dataset Description
 
 This dataset contains restaurant billing and customer behavior information used to predict the tip amount given to waiters. It includes bill value, customer characteristics, time of visit, and group size.
