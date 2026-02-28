@@ -1,67 +1,125 @@
-Skip to main content
+                                               Day 18 – India Job Market & Salary Trends 2026
 
-Login
 
-Dataset All / Dataset What is a Dataset? A dataset is a structured collection of data organized and stored together for analysis or processing. The data within a dataset is typically related in some way and taken from a single source or intended for a single project. For example, a dataset might contain a collection of business data (sales figures, customer contact information, transactions, etc.). A dataset can include many different types of data, from numerical values to text, images or audio recordings. The data within a dataset can typically be accessed individually, in combination or managed as a whole entity.
+✨ Dataset Source 
 
-Datasets are a fundamental tool in data analytics, data analysis and machine learning (ML), providing the data upon which analysts draw insights and trends. They are essential to ML because selecting the suitable dataset for an ML project is one of the most crucial initial steps of successfully training and deploying an ML model.
+https://www.kaggle.com/datasets/amar5693/india-job-market-and-salary-trends-2026
 
-Here’s more to explore
+---
 
-The Big Book of Machine Learning Use Cases — 2nd Edition
+📌 Dataset Description
 
-Your complete how-to guide to putting machine learning to work — plus use cases, code samples and notebooks.
+This dataset contains 10,000 clean and structured job records representing India’s job market and salary trends for 2026.
 
-Get the eBook
+Each row represents a unique job posting and includes job role, company, location, required experience, skills, salary range, employment type, and remote options.
 
-Tap the Potential of LLMs
+The dataset is fully cleaned:
+- No missing values
+- No duplicates
+- Standardized categorical values
+- Realistic salary ranges
 
-How to boost efficiency and reduce costs with AI.
+---
 
-Download now
+📊 Type of Data
 
-The Big Book of MLOps
+Structured tabular dataset  
+Numerical + Categorical features
 
-Learn new generative AI and LLMOps strategies.
+---
 
-Get the eBook Is it data set or dataset? There is some debate around the word dataset and whether it should be one or two words. Merriam-Webster lists it as one word, but other sources, such as Dictionary.com, use data set. Databricks’ preference is dataset.
+🤖 ML Concept
 
-Dataset vs. Database There’s also often confusion between the terms dataset and database. While a database and a dataset are both related terms used to describe the organization and management of data, they differ in several meaningful ways:
+Machine Learning – Regression & Classification
 
-As defined in the first section, a dataset is a collection of data used for analysis and modeling and typically organized in a structured format. That structured format could be an Excel spreadsheet, a CSV file, a JSON file or other formats. The data in a dataset can be organized in multiple ways and created from a wide variety of sources, such as a customer poll, an experiment or an existing database. A dataset can be used for many purposes, including training and testing machine learning models, data visualization, research or statistical analysis. Datasets can be shared publicly or privately. A dataset is typically smaller in size compared to a database.
+- Regression → Predict salary range
+- Classification → Predict employment type or remote option
 
-A database is designed for long-term storage and management of large amounts of organized data that is stored electronically, allowing the data to be easily accessed, manipulated and updated. In other words, a database is an organized collection of data stored as multiple datasets. Many different types of databases exist, including relational databases, document databases and key-value databases.
+---
 
-What are examples of datasets? A dataset could include numbers, text, images, audio recordings or even basic descriptions of objects. A dataset can be organized in various forms including tables and files. A few examples of datasets include:
+🎯 Target Variable (for modeling)
 
-A dataset that includes a listing of all real estate sales in a specific geographic area during a designated time period A dataset that contains information on all the known meteorite landings A dataset on regional air quality in a specific area during a designated time period A dataset that includes the attendance rate for public school students pre-K-12 by student group and by district during the 2021–2022 school year Public datasets Public datasets are public data organized around a theme or topic that are accessible to the public. Public datasets are especially valuable to data scientists because they are generally free and provide easily accessible and downloadable data they can use to train ML models.
+Primary:
+- salary_min_inr
+- salary_max_inr
 
-For example, the National Oceanic and Atmospheric Administration (NOAA) provides data on everything from water quality to climate change. Automatic dependence surveillance (ADS-B) data shows commercial aircraft movement in real time, and the U.S. General Services Administration offers Data.gov, which includes more than 200,000 datasets and hundreds of categories.
+Optional:
+- employment_type
+- remote_option
 
-Databricks also provides a variety of sample datasets made available by third parties that can be used in the Databricks Workspace. Using such datasets in coordination with AI and Machine Learning on Databricks empowers ML teams to prepare and process data, streamlines cross-team collaboration and standardizes the full ML lifecycle from experimentation to production, including for generative AI and large language models.
+---
 
-Using datasets There are several different ways to use datasets. Analysts use them to explore and visualize data for business intelligence purposes. Data scientists use datasets to train ML models. However, before datasets can be used, data needs to be ingested into a data lake or a lakehouse using data engineering processes like Extract, Transform and Load (ETL). ETL enables engineers to extract data from different sources, transform the data into a usable and trusted resource, and load the data into the systems end users can access and use to solve business problems.
+📥 Input Features
 
-Managing, cataloging and securing datasets Before datasets can be used, they must be cataloged, governed and securely stored with a governance system. Implementing an effective data governance strategy allows organizations to make data readily available for data-driven decision-making while safeguarding data from unauthorized access and ensuring compliance with regulatory requirements.
+- Job Title  
+- Company Name  
+- Location  
+- Experience Required (years)  
+- Skills  
+- Employment Type  
+- Remote Option  
 
-To address data governance challenges, Databricks developed Unity Catalog, a unified governance solution for data and AI assets on the lakehouse. With Unity Catalog, organizations can seamlessly govern structured and unstructured data, machine learning models, notebooks, dashboards and files on any cloud or platform. Data scientists, analysts and engineers can use Unity Catalog to securely discover, access and collaborate on trusted data and AI assets.
+---
 
-Sharing datasets Most data scientists not only want to collect and analyze datasets, they also want to share them. Data sharing encourages more connection and collaboration, which can result in significant new findings. Delta Sharing is an open source tool integrated within Unity Catalog that enables data scientists and analysts to easily share data and AI assets across clouds, regions and platforms to unlock new revenue streams and drive business value without relying on proprietary formats, complex ETL processes or costly data replication.
+📤 Output
 
-Additional Resources Databricks datasets Data governance Data science on the lakehouse Back to Glossary databricks logo Why Databricks
+- Predicted Salary Range (INR)  
+- Employment Pattern Insights  
 
-Product
+---
 
-Solutions
+🧠 What We Learned
 
-Resources
+- Experience strongly impacts salary range  
+- Tech roles like ML Engineer & Data Scientist have higher salaries  
+- Remote roles are increasing in demand  
+- Bangalore, Pune, Hyderabad show strong tech hiring trends  
+- Full-time roles dominate the market  
 
-About
+---
 
-Databricks Inc. 160 Spear Street, 15th Floor San Francisco, CA 94105 1-866-330-0121
+🔗 Correlation Insights
 
-See Careers at Databricks
+- Experience ↔ Salary (Strong positive correlation)  
+- Job Role ↔ Salary Range  
+- Location ↔ Salary Variation  
+- Skill Demand ↔ Compensation Level  
+- Remote Option ↔ Salary Flexibility  
 
-© Databricks 2026. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceberg, Iceberg, and the Apache Iceberg logo are trademarks of the Apache Software Foundation.
+---
 
-Privacy Notice|Terms of Use|Modern Slavery Statement|California Privacy|Your Privacy Choices
+📈 Visualization Ideas
+
+- Experience vs Salary scatter plot  
+- Salary distribution histogram  
+- Top-paying job roles bar chart  
+- Location-wise average salary graph  
+- Skill demand frequency chart  
+
+---
+
+🌍 Real-Life Use
+
+Used in:
+
+- Salary prediction systems  
+- HR analytics dashboards  
+- Career guidance platforms  
+- Skill demand analysis  
+- Employment trend forecasting  
+
+---
+
+🎓 Learning Outcome
+
+This project helped understand:
+
+✔ Salary prediction using regression  
+✔ Feature engineering for text-based skills  
+✔ Market trend analysis  
+✔ Data cleaning & structured dataset handling  
+✔ Real-world HR analytics  
+
+---
+
+⭐ This project demonstrates how machine learning can analyze job market data to predict salary trends and employment patterns in India.
