@@ -1,107 +1,125 @@
-Skip to content 40-Day-Dataset-Challenge Repository navigation Code Issues Pull requests 40-Day-Dataset-Challenge /Day-18/ Yuvii2102 Yuvii2102 yesterday Name Last commit date .. README.md yesterday README.md Skip to main content
+                                          🕵️ Day 21 – Deepfake & Synthetic Media Detection Dataset
 
-Login
+✨ Dataset Source 
 
-Dataset All / Dataset What is a Dataset? A dataset is a structured collection of data organized and stored together for analysis or processing. The data within a dataset is typically related in some way and taken from a single source or intended for a single project. For example, a dataset might contain a collection of business data (sales figures, customer contact information, transactions, etc.). A dataset can include many different types of data, from numerical values to text, images or audio recordings. The data within a dataset can typically be accessed individually, in combination or managed as a whole entity.
+https://www.kaggle.com/datasets/payaldhokane/deepfake-and-synthetic-media-detection-dataset
 
-Datasets are a fundamental tool in data analytics, data analysis and machine learning (ML), providing the data upon which analysts draw insights and trends. They are essential to ML because selecting the suitable dataset for an ML project is one of the most crucial initial steps of successfully training and deploying an ML model.
+---
 
-Here’s more to explore
+📌 Dataset Description
 
-The Big Book of Machine Learning Use Cases — 2nd Edition
+This dataset contains synthetic forensic metadata representing real and AI-generated (deepfake) media samples across images, videos, and audio.
 
-Your complete how-to guide to putting machine learning to work — plus use cases, code samples and notebooks.
+It is designed for deepfake detection research and binary classification tasks.
 
-Get the eBook
+⚠️ Note:
+This dataset contains synthetic metadata only and does NOT include actual deepfake media files.
 
-Tap the Potential of LLMs
+---
 
-How to boost efficiency and reduce costs with AI.
+📊 Type of Data
 
-Download now
+Structured tabular dataset  
+Numerical + Categorical + Binary features  
 
-The Big Book of MLOps
+Total Records: 1000  
 
-Learn new generative AI and LLMOps strategies.
+---
 
-Get the eBook Is it data set or dataset? There is some debate around the word dataset and whether it should be one or two words. Merriam-Webster lists it as one word, but other sources, such as Dictionary.com, use data set. Databricks’ preference is dataset.
+🤖 ML Concept
 
-Dataset vs. Database There’s also often confusion between the terms dataset and database. While a database and a dataset are both related terms used to describe the organization and management of data, they differ in several meaningful ways:
+Machine Learning – Binary Classification  
 
-As defined in the first section, a dataset is a collection of data used for analysis and modeling and typically organized in a structured format. That structured format could be an Excel spreadsheet, a CSV file, a JSON file or other formats. The data in a dataset can be organized in multiple ways and created from a wide variety of sources, such as a customer poll, an experiment or an existing database. A dataset can be used for many purposes, including training and testing machine learning models, data visualization, research or statistical analysis. Datasets can be shared publicly or privately. A dataset is typically smaller in size compared to a database.
+Goal:  
+Classify media as:
 
-A database is designed for long-term storage and management of large amounts of organized data that is stored electronically, allowing the data to be easily accessed, manipulated and updated. In other words, a database is an organized collection of data stored as multiple datasets. Many different types of databases exist, including relational databases, document databases and key-value databases.
+0 → Real  
+1 → Fake (Deepfake / AI-generated)
 
-What are examples of datasets? A dataset could include numbers, text, images, audio recordings or even basic descriptions of objects. A dataset can be organized in various forms including tables and files. A few examples of datasets include:
+---
 
-A dataset that includes a listing of all real estate sales in a specific geographic area during a designated time period A dataset that contains information on all the known meteorite landings A dataset on regional air quality in a specific area during a designated time period A dataset that includes the attendance rate for public school students pre-K-12 by student group and by district during the 2021–2022 school year Public datasets Public datasets are public data organized around a theme or topic that are accessible to the public. Public datasets are especially valuable to data scientists because they are generally free and provide easily accessible and downloadable data they can use to train ML models.
+🎯 Target Variable
 
-For example, the National Oceanic and Atmospheric Administration (NOAA) provides data on everything from water quality to climate change. Automatic dependence surveillance (ADS-B) data shows commercial aircraft movement in real time, and the U.S. General Services Administration offers Data.gov, which includes more than 200,000 datasets and hundreds of categories.
+is_fake (Real vs AI-generated content)
 
-Databricks also provides a variety of sample datasets made available by third parties that can be used in the Databricks Workspace. Using such datasets in coordination with AI and Machine Learning on Databricks empowers ML teams to prepare and process data, streamlines cross-team collaboration and standardizes the full ML lifecycle from experimentation to production, including for generative AI and large language models.
+---
 
-Using datasets There are several different ways to use datasets. Analysts use them to explore and visualize data for business intelligence purposes. Data scientists use datasets to train ML models. However, before datasets can be used, data needs to be ingested into a data lake or a lakehouse using data engineering processes like Extract, Transform and Load (ETL). ETL enables engineers to extract data from different sources, transform the data into a usable and trusted resource, and load the data into the systems end users can access and use to solve business problems.
+📥 Input Features
 
-Managing, cataloging and securing datasets Before datasets can be used, they must be cataloged, governed and securely stored with a governance system. Implementing an effective data governance strategy allows organizations to make data readily available for data-driven decision-making while safeguarding data from unauthorized access and ensuring compliance with regulatory requirements.
+Media Information:
+- media_type (Image / Video / Audio)
+- content_category
+- face_count
+- audio_present
+- source_platform
 
-To address data governance challenges, Databricks developed Unity Catalog, a unified governance solution for data and AI assets on the lakehouse. With Unity Catalog, organizations can seamlessly govern structured and unstructured data, machine learning models, notebooks, dashboards and files on any cloud or platform. Data scientists, analysts and engineers can use Unity Catalog to securely discover, access and collaborate on trusted data and AI assets.
+Forensic Indicators:
+- lip_sync_score (0–1)
+- visual_artifacts_score (0–1)
+- compression_level (0–1)
+- lighting_inconsistency_score (0–1)
 
-Sharing datasets Most data scientists not only want to collect and analyze datasets, they also want to share them. Data sharing encourages more connection and collaboration, which can result in significant new findings. Delta Sharing is an open source tool integrated within Unity Catalog that enables data scientists and analysts to easily share data and AI assets across clouds, regions and platforms to unlock new revenue streams and drive business value without relying on proprietary formats, complex ETL processes or costly data replication. Skip to content 40-Day-Dataset-Challenge Repository navigation Code Issues Pull requests 40-Day-Dataset-Challenge /Day-18/ Yuvii2102 Yuvii2102 yesterday Name Last commit date .. README.md yesterday README.md Skip to main content
+---
 
-Login
+📤 Output
 
-Dataset All / Dataset What is a Dataset? A dataset is a structured collection of data organized and stored together for analysis or processing. The data within a dataset is typically related in some way and taken from a single source or intended for a single project. For example, a dataset might contain a collection of business data (sales figures, customer contact information, transactions, etc.). A dataset can include many different types of data, from numerical values to text, images or audio recordings. The data within a dataset can typically be accessed individually, in combination or managed as a whole entity.
+Predicted Label:
+- Real
+- Fake (Deepfake)
 
-Datasets are a fundamental tool in data analytics, data analysis and machine learning (ML), providing the data upon which analysts draw insights and trends. They are essential to ML because selecting the suitable dataset for an ML project is one of the most crucial initial steps of successfully training and deploying an ML model.
+---
 
-Here’s more to explore
+🧠 What We Learned
 
-The Big Book of Machine Learning Use Cases — 2nd Edition
+- High visual artifact score often indicates fake content  
+- Poor lip-sync consistency suggests synthetic video  
+- Lighting inconsistencies are common in deepfakes  
+- Compression anomalies can reveal AI generation  
+- Multi-feature analysis improves detection accuracy  
 
-Your complete how-to guide to putting machine learning to work — plus use cases, code samples and notebooks.
+---
 
-Get the eBook
+🔗 Correlation Insights
 
-Tap the Potential of LLMs
+- Lip Sync Score ↔ Authenticity  
+- Visual Artifacts ↔ Fake Probability  
+- Lighting Inconsistency ↔ AI Generation  
+- Compression Level ↔ Synthetic Media Detection  
 
-How to boost efficiency and reduce costs with AI.
+---
 
-Download now
+📈 Visualization Ideas
 
-The Big Book of MLOps
+- Feature importance chart  
+- Correlation heatmap  
+- Lip-sync score distribution (Real vs Fake)  
+- Platform-wise fake content analysis  
+- Media-type vs detection accuracy  
 
-Learn new generative AI and LLMOps strategies.
+---
 
-Get the eBook Is it data set or dataset? There is some debate around the word dataset and whether it should be one or two words. Merriam-Webster lists it as one word, but other sources, such as Dictionary.com, use data set. Databricks’ preference is dataset.
+🌍 Real-Life Use
 
-Dataset vs. Database There’s also often confusion between the terms dataset and database. While a database and a dataset are both related terms used to describe the organization and management of data, they differ in several meaningful ways:
+Used in:
 
-As defined in the first section, a dataset is a collection of data used for analysis and modeling and typically organized in a structured format. That structured format could be an Excel spreadsheet, a CSV file, a JSON file or other formats. The data in a dataset can be organized in multiple ways and created from a wide variety of sources, such as a customer poll, an experiment or an existing database. A dataset can be used for many purposes, including training and testing machine learning models, data visualization, research or statistical analysis. Datasets can be shared publicly or privately. A dataset is typically smaller in size compared to a database.
+- Social media moderation systems  
+- News verification platforms  
+- Digital forensics research  
+- AI-generated content detection  
+- Cybersecurity applications  
 
-A database is designed for long-term storage and management of large amounts of organized data that is stored electronically, allowing the data to be easily accessed, manipulated and updated. In other words, a database is an organized collection of data stored as multiple datasets. Many different types of databases exist, including relational databases, document databases and key-value databases.
+---
 
-What are examples of datasets? A dataset could include numbers, text, images, audio recordings or even basic descriptions of objects. A dataset can be organized in various forms including tables and files. A few examples of datasets include:
+🎓 Learning Outcome
 
-A dataset that includes a listing of all real estate sales in a specific geographic area during a designated time period A dataset that contains information on all the known meteorite landings A dataset on regional air quality in a specific area during a designated time period A dataset that includes the attendance rate for public school students pre-K-12 by student group and by district during the 2021–2022 school year Public datasets Public datasets are public data organized around a theme or topic that are accessible to the public. Public datasets are especially valuable to data scientists because they are generally free and provide easily accessible and downloadable data they can use to train ML models.
+This project helped understand:
 
-For example, the National Oceanic and Atmospheric Administration (NOAA) provides data on everything from water quality to climate change. Automatic dependence surveillance (ADS-B) data shows commercial aircraft movement in real time, and the U.S. General Services Administration offers Data.gov, which includes more than 200,000 datasets and hundreds of categories.
+✔ Binary classification modeling  
+✔ AI forensics concepts  
+✔ Feature importance analysis  
+✔ Ethical AI research applications  
+✔ Real-world deepfake detection modeling  
 
-Databricks also provides a variety of sample datasets made available by third parties that can be used in the Databricks Workspace. Using such datasets in coordination with AI and Machine Learning on Databricks empowers ML teams to prepare and process data, streamlines cross-team collaboration and standardizes the full ML lifecycle from experimentation to production, including for generative AI and large language models.
+---
 
-Using datasets There are several different ways to use datasets. Analysts use them to explore and visualize data for business intelligence purposes. Data scientists use datasets to train ML models. However, before datasets can be used, data needs to be ingested into a data lake or a lakehouse using data engineering processes like Extract, Transform and Load (ETL). ETL enables engineers to extract data from different sources, transform the data into a usable and trusted resource, and load the data into the systems end users can access and use to solve business problems.
-
-Managing, cataloging and securing datasets Before datasets can be used, they must be cataloged, governed and securely stored with a governance system. Implementing an effective data governance strategy allows organizations to make data readily available for data-driven decision-making while safeguarding data from unauthorized access and ensuring compliance with regulatory requirements.
-
-To address data governance challenges, Databricks developed Unity Catalog, a unified governance solution for data and AI assets on the lakehouse. With Unity Catalog, organizations can seamlessly govern structured and unstructured data, machine learning models, notebooks, dashboards and files on any cloud or platform. Data scientists, analysts and engineers can use Unity Catalog to securely discover, access and collaborate on trusted data and AI assets.
-
-Sharing datasets Most data scientists not only want to collect and analyze datasets, they also want to share them. Data sharing encourages more connection and collaboration, which can result in significant new findings. Delta Sharing is an open source tool integrated within Unity Catalog that enables data scientists and analysts to easily share data and AI assets across clouds, regions and platforms to unlock new revenue streams and drive business value without relying on proprietary formats, complex ETL processes or costly data replication.
-
-Additional Resources Databricks datasets Data governance Data science on the lakehouse Back to Glossary databricks logo Why Databricks
-
-Product
-
-Solutions
-
-Resources
-
-About
+⭐ This project demonstrates how machine learning can analyze forensic metadata to detect AI-generated or manipulated media.
