@@ -1,10 +1,13 @@
-# 30-Days-With-Datasets
+# 📂 30-Days-With-Datasets
 📂 My Dataset learning project
 
 
 📌 Project Overview
 
-This repository documents my 30-day learning journey into Machine Learning (ML), Deep Learning (DL), and Artificial Intelligence (AI) through hands-on dataset analysis.
+- This repository documents my 30-day learning journey into Machine Learning (ML) through hands-on dataset analysis. 
+
+- This repository contains my **30 Days Dataset Challenge**, where I work on one dataset every day and apply machine learning techniques to solve real-world problems.
+
 
 ---
 
