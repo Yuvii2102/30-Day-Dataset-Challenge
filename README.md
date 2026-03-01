@@ -11,13 +11,17 @@
 
 ---
 
-Each day focuses on:
+🔔 The goal of this challenge is to:
 
 - Understanding a real dataset
 - Identifying problem statements
 - Learning ML concepts
 - Exploring correlations
 - Visualization ideas
+- Improve data analysis skills
+- Practice machine learning models daily
+- Understand different business and healthcare problems
+- Build a strong ML portfolio
 - Real-world applications
 
 The goal is to build strong fundamentals, analytical thinking, and practical experience useful for placements and interviews.
