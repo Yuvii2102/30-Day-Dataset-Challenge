@@ -105,14 +105,6 @@ By completing this challenge, I am developing:
 ✔ ML problem-solving thinking
 ✔ Industry-relevant skills
 
----
-
-🔥 Future Scope
-
-- Apply ML models to datasets
-- Create dashboards
-- Predictive analytics projects
-- Advanced ML exploration
 
 ---
 
